@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #eccfe0 !important;
+}
+
+.wrapper{
+    width: 25%;
+    height: 555px;
+    background-color: white;
+}
+
+.display{
+    background-color: white;
+}
+.display-input{
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    text-align: end;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    padding: 20px;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+button{
+    width: 100%;
+    height: 75px;
+    border-radius: 50% !important;
+    font-size: 1.5rem !important;
+    border: none;
+}
+.answer-button{
+    grid-column: span 2;
+    background-color:  #eccfe0 ;
+}
+
+@media (max-width:768px) {
+    .wrapper{
+        width: 90% !important;
+    }
+}
